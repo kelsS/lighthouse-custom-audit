@@ -14,17 +14,17 @@ const fs = require('fs');
     passes: [
       {
         passName: 'defaultPass',
-        gatherers: ['hero-gatherer'],
+        gatherers: ['wcag2-1-AA-audit-gatherer'],
       },
     ],
 
-    audits: ['hero-audit'],
+    audits: ['wcag2-1-AA-audit'],
 
     categories: {
-      mysite: {
-        title: 'Test Project Hero Image',
-        description: 'Hero Imaged Loaded!!',
-        auditRefs: [{ id: 'testProject-heroimage-audit', weight: 10 }],
+      wcag2AAaudit: {
+        title: 'WCAG 2.1 AA compliance audit',
+        description: 'Runs a custom Lighthouse audit with WCAG 2.1 AA compliance (includes more tests from the Not-Applicable section.',
+        auditRefs: [{ id: 'wcag2-1-AA-audit', weight: 10 }],
       },
     },
   };

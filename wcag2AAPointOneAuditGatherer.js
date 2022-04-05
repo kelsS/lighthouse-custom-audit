@@ -1,11 +1,11 @@
 'use strict';
 const { Gatherer } = require('lighthouse');
 
-class TestProjectHeroImage extends Gatherer {
+class WcagAA2PointOneAudit extends Gatherer {
   afterPass(options) {
     const driver = options.driver;
     return driver.evaluateAsync('window.testProjectMetric');
   }
 }
 
-module.exports = TestProjectHeroImage;
+module.exports = WcagAA2PointOneAudit;
